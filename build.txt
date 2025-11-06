@@ -1,0 +1,3 @@
+displayName = Reforges Reforged
+author = RGB Team
+version = 0.1
