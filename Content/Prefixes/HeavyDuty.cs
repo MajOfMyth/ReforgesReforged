@@ -24,7 +24,6 @@ namespace ReforgesReforged.Content.Prefixes
         public override void ApplyAccessoryEffects(Player player)
         {
             player.statDefense += 6;
-
             player.GetModPlayer<RRPlayer>().SpeedMult *= 0.9f;
         }
 
@@ -45,10 +44,11 @@ namespace ReforgesReforged.Content.Prefixes
                 IsModifier = true,
                 IsModifierBad = true,
             };
+
         }
 
         public LocalizedText DefenseTooltip => Mod.GetLocalization($"Defense");
-        public LocalizedText SpeedTooltip => Mod.GetLocalization($"Speed");
+        public LocalizedText SpeedTooltip => Mod.GetLocalization($"MovementSpeed");
 
     }
 }

@@ -14,22 +14,26 @@ namespace ReforgesReforged.Common.ModPlayers
     {
         public Player player;
         public float SpeedMult;
+        public float CritChanceBonus;
 
 
         public override void Initialize()
         {
             player = this.Player;
             SpeedMult = 1f;
+            CritChanceBonus = 0f;
         }
 
         public override void UpdateDead()
         {
             SpeedMult = 1f;
+            CritChanceBonus = 0f;
         }
 
         public override void ResetEffects()
         {
             SpeedMult = 1f;
+            CritChanceBonus = 0f;
             base.ResetEffects();
         }
 
@@ -50,6 +54,8 @@ namespace ReforgesReforged.Common.ModPlayers
 
         public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
         {
+
+
             /*
             if (player.HeldItem.prefix == ModContent.PrefixType<whateverprefix>())
             {

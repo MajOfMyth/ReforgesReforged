@@ -1,9 +1,13 @@
 Mods: {
 	ReforgesReforged: {
-		MaxMana: Maximum Mana
-		ManaRegen: Mana Regen
-		Defense: Defense
-		Speed: Speed
+		MaxMana: maximum mana
+		ManaRegen: mana regen
+		Defense: defense
+		MovementSpeed: movement speed
+		AttackSpeed: attack speed
+		LifeRegen: life regen
+		Damage: damage
+		CritChance: critical strike chance
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
@@ -15,6 +19,7 @@ Mods: {
 			Dueling.DisplayName: Dueling
 			Overclocked.DisplayName: Overclocked
 			Vitrified.DisplayName: Vitrified
+			Cursed.DisplayName: Cursed
 		}
 	}
 }

@@ -42,6 +42,7 @@ namespace ReforgesReforged.Content.Prefixes
             {
                 IsModifier = true,
             };
+
         }
 
         public LocalizedText MaxManaTooltip => Mod.GetLocalization($"MaxMana");

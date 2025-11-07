@@ -29,7 +29,7 @@ namespace ReforgesReforged.Content.Prefixes
 
         public override void ModifyValue(ref float valueMult)
         {
-            valueMult += 1.25f;
+            valueMult *= 1.2f;
         }
 
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
@@ -40,6 +40,7 @@ namespace ReforgesReforged.Content.Prefixes
                 IsModifier = true,
                 IsModifierBad = true,
             };
+
         }
 
         public LocalizedText DefenseTooltip => Mod.GetLocalization($"Defense");
