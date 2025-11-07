@@ -1,12 +1,14 @@
-﻿using Terraria;
+﻿using System.Collections.Generic;
+using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace ReforgesReforged.Content.Prefixes
 {
-    public class Alacritous : ModPrefix
+    public class Enormous : ModPrefix
     {
 
-        public override PrefixCategory Category => PrefixCategory.Ranged;
+        public override PrefixCategory Category => PrefixCategory.Melee;
 
         public override float RollChance(Item item)
         {
@@ -20,13 +22,13 @@ namespace ReforgesReforged.Content.Prefixes
 
         public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
         {
-            damageMult -= 0.5f;
-            useTimeMult -= 0.4f;
+            scaleMult += 1f;
+            useTimeMult += 0.5f;
         }
 
         public override void ModifyValue(ref float valueMult)
         {
-            valueMult *= 2f;
+            valueMult *= 1.15f;
         }
 
     }

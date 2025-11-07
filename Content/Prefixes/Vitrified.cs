@@ -1,9 +1,11 @@
-﻿using Terraria;
+﻿using System.Collections.Generic;
+using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace ReforgesReforged.Content.Prefixes
 {
-    public class Besieging : ModPrefix
+    public class Vitrified : ModPrefix
     {
 
         public override PrefixCategory Category => PrefixCategory.AnyWeapon;
@@ -15,20 +17,32 @@ namespace ReforgesReforged.Content.Prefixes
 
         public override bool CanRoll(Item item)
         {
-            if (item.DamageType == DamageClass.Summon) return false;
             return true;
         }
 
         public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
         {
-            damageMult += 1f;
-            useTimeMult += 0.9f;
+            damageMult += 0.25f;
+            useTimeMult -= 0.15f;
+            critBonus += 5;
         }
 
         public override void ModifyValue(ref float valueMult)
         {
-            valueMult *= 7f;
+            valueMult += 1.25f;
         }
+
+        public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
+        {
+
+            yield return new TooltipLine(Mod, "DefenseTooltip", "-20% " + DefenseTooltip.Value)
+            {
+                IsModifier = true,
+                IsModifierBad = true,
+            };
+        }
+
+        public LocalizedText DefenseTooltip => Mod.GetLocalization($"Defense");
 
     }
 }

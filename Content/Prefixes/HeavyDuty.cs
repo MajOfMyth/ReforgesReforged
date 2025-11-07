@@ -1,0 +1,54 @@
+﻿using ReforgesReforged.Common.ModPlayers;
+using System.Collections.Generic;
+using Terraria;
+using Terraria.Localization;
+using Terraria.ModLoader;
+
+namespace ReforgesReforged.Content.Prefixes
+{
+    public class HeavyDuty : ModPrefix
+    {
+
+        public override PrefixCategory Category => PrefixCategory.Accessory;
+
+        public override float RollChance(Item item)
+        {
+            return 1f;
+        }
+
+        public override bool CanRoll(Item item)
+        {
+            return true;
+        }
+
+        public override void ApplyAccessoryEffects(Player player)
+        {
+            player.statDefense += 6;
+
+            player.GetModPlayer<RRPlayer>().SpeedMult *= 0.9f;
+        }
+
+        public override void ModifyValue(ref float valueMult)
+        {
+            valueMult *= 1.25f;
+        }
+
+        public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
+        {
+
+            yield return new TooltipLine(Mod, "DefenseTooltip", "+6 " + DefenseTooltip.Value)
+            {
+                IsModifier = true,
+            };
+            yield return new TooltipLine(Mod, "SpeedTooltip", "-10% " + SpeedTooltip.Value)
+            {
+                IsModifier = true,
+                IsModifierBad = true,
+            };
+        }
+
+        public LocalizedText DefenseTooltip => Mod.GetLocalization($"Defense");
+        public LocalizedText SpeedTooltip => Mod.GetLocalization($"Speed");
+
+    }
+}

@@ -1,9 +1,20 @@
 Mods: {
 	ReforgesReforged: {
+		MaxMana: Maximum Mana
+		ManaRegen: Mana Regen
+		Defense: Defense
+		Speed: Speed
+
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
 			Vacuous.DisplayName: Vacuous
 			Besieging.DisplayName: Besieging
+			Attuned.DisplayName: Attuned
+			HeavyDuty.DisplayName: Heavy Duty
+			Enormous.DisplayName: Enormous
+			Dueling.DisplayName: Dueling
+			Overclocked.DisplayName: Overclocked
+			Vitrified.DisplayName: Vitrified
 		}
 	}
 }
