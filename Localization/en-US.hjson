@@ -1,0 +1,9 @@
+Mods: {
+	ReforgesReforged: {
+		Prefixes: {
+			Alacritous.DisplayName: Alacritous
+			Vacuous.DisplayName: Vacuous
+			Besieging.DisplayName: Besieging
+		}
+	}
+}
