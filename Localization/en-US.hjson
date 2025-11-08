@@ -11,7 +11,8 @@ Mods: {
 		MaxMinions: max minions
 		MaxSentries: max sentries
 		SummonDamage: summon damage
-		GenericSpeedWord: speed
+		Endurance: damage reduction
+
 		SolitaryInfo: grows stronger with each unused minion slot
 
 		Prefixes: {
@@ -29,6 +30,8 @@ Mods: {
 			Bombarding.DisplayName: Bombarding
 			Sacrificial.DisplayName: Sacrificial
 			Solitary.DisplayName: Solitary
+			Reinforced.DisplayName: Reinforced
+			Rejuvenating.DisplayName: Rejuvenating
 		}
 	}
 }
