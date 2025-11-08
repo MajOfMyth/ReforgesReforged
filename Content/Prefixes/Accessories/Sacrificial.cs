@@ -33,6 +33,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
+
             yield return new TooltipLine(Mod, "SummonDamageTooltip", "1.02x " + SummonDamageTooltip.Value)
             {
                 IsModifier = true,
@@ -45,8 +46,8 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         }
 
-        public LocalizedText MaxMinionsTooltip => Mod.GetLocalization($"MaxMinions");
         public LocalizedText SummonDamageTooltip => Mod.GetLocalization($"SummonDamage");
+        public LocalizedText MaxMinionsTooltip => Mod.GetLocalization($"MaxMinions");
 
     }
 }

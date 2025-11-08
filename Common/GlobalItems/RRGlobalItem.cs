@@ -11,6 +11,7 @@ namespace ReforgesReforged.Common.GlobalItems
         //todo: add tooltip
         public override void ModifyWeaponDamage(Item item, Player player, ref StatModifier damage)
         {
+
             if(item.prefix == ModContent.PrefixType<Solitary>())
             {
                 float multiplier = 1f;
@@ -18,10 +19,12 @@ namespace ReforgesReforged.Common.GlobalItems
                 multiplier += unusedSlots * 0.05f;
                 damage += multiplier;
             }
+
             if (item.prefix == ModContent.PrefixType<Automatic>())
             {
                 item.autoReuse = true;
             }
+
         }
         
     }
