@@ -12,8 +12,10 @@ Mods: {
 		MaxSentries: max sentries
 		SummonDamage: summon damage
 		Endurance: damage reduction
+		Fishing: fishing
 		SolitaryInfo: grows stronger with each unused minion slot
 		DevouringInfo: deals 5% max health as damage when hitting an enemy
+		AutomaticInfo: gains auto usage
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
