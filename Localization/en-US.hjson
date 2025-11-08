@@ -40,8 +40,12 @@ Mods: {
 			Masterful.DisplayName: Masterful
 			Hasted.DisplayName: Hasted
 			Luring.DisplayName: Luring
+			Martyr.DisplayName: Martyr
 		}
 
-		Deaths.Devoured: "{0} was devoured..."
+		Deaths: {
+			Devoured: "{0} was devoured..."
+			Martyr: "{0} became a martyr..."
+		}
 	}
 }
