@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace ReforgesReforged.Content.Prefixes.Accessories
 {
-    public class Luring : ModPrefix
+    public class Attuned : ModPrefix
     {
 
         public override PrefixCategory Category => PrefixCategory.Accessory;
@@ -22,7 +22,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override void ApplyAccessoryEffects(Player player)
         {
-            player.fishingSkill += 5;
+            player.pickSpeed -= 0.05f;
         }
 
         public override void ModifyValue(ref float valueMult)
@@ -33,14 +33,14 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
 
-            yield return new TooltipLine(Mod, "FishingTooltip", "+5 " + FishingTooltip.Value)
+            yield return new TooltipLine(Mod, "MiningTooltip", "+5% " + MiningTooltip.Value)
             {
                 IsModifier = true,
             };
 
         }
 
-        public LocalizedText FishingTooltip => Mod.GetLocalization($"FishingSkill");
+        public LocalizedText MiningTooltip => Mod.GetLocalization($"MiningSpeed");
 
     }
 }
