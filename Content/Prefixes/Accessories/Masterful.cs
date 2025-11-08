@@ -38,14 +38,30 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
 
-            yield return new TooltipLine(Mod, "MaxManaTooltip", "+10 " + MaxManaTooltip.Value)
+            yield return new TooltipLine(Mod, "DamageTooltip", "x1.02 " + DamageTooltip.Value)
             {
                 IsModifier = true,
+            };
+            yield return new TooltipLine(Mod, "AttackSpeedTooltip", "x1.02 " + AttackSpeedTooltip.Value)
+            {
+                IsModifier = true,
+            };
+            yield return new TooltipLine(Mod, "MoveSpeedTooltip", "+10% " + MoveSpeedTooltip.Value)
+            {
+                IsModifier = true,
+            };
+            yield return new TooltipLine(Mod, "EnduranceTooltip", "-10% " + EnduranceTooltip.Value)
+            {
+                IsModifier = true,
+                IsModifierBad = true,
             };
 
         }
 
-        public LocalizedText MaxManaTooltip => Mod.GetLocalization($"MaxMana");
+        public LocalizedText DamageTooltip => Mod.GetLocalization($"Damage");
+        public LocalizedText AttackSpeedTooltip => Mod.GetLocalization($"AttackSpeed");
+        public LocalizedText MoveSpeedTooltip => Mod.GetLocalization($"MovementSpeed");
+        public LocalizedText EnduranceTooltip => Mod.GetLocalization($"Endurance");
 
     }
 }
