@@ -10,6 +10,9 @@ Mods: {
 		CritChance: critical strike chance
 		MaxMinions: max minions
 		MaxSentries: max sentries
+		SummonDamage: summon damage
+		GenericSpeedWord: speed
+		SolitaryInfo: grows stronger with each unused minion slot
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
@@ -24,6 +27,8 @@ Mods: {
 			Cursed.DisplayName: Cursed
 			Bastion.DisplayName: Bastion
 			Bombarding.DisplayName: Bombarding
+			Sacrificial.DisplayName: Sacrificial
+			Solitary.DisplayName: Solitary
 		}
 	}
 }
