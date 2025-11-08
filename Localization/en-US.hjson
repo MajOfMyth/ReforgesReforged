@@ -12,7 +12,7 @@ Mods: {
 		MaxSentries: max sentries
 		SummonDamage: summon damage
 		Endurance: damage reduction
-		FishingSkill: fishing
+		FishingSkill: Increases fishing power by
 		MiningSpeed: mining speed
 		SolitaryInfo: grows stronger with each unused minion slot
 		DevouringInfo: deals 5% max health as damage when hitting an enemy

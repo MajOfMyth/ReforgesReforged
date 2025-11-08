@@ -33,7 +33,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
 
-            yield return new TooltipLine(Mod, "FishingTooltip", "+5 " + FishingTooltip.Value)
+            yield return new TooltipLine(Mod, "FishingTooltip", FishingTooltip.Value + " 5")
             {
                 IsModifier = true,
             };
