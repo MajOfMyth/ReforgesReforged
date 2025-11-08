@@ -14,26 +14,29 @@ namespace ReforgesReforged.Common.ModPlayers
     {
         public Player player;
         public float SpeedMult;
-        public float CritChanceBonus;
+        //minion inversion :3
+        public int MinversionStack;
 
+        private void ResetAccEffects()
+        {
+            SpeedMult = 1f;
+            MinversionStack = 0;
+        }
 
         public override void Initialize()
         {
             player = this.Player;
-            SpeedMult = 1f;
-            CritChanceBonus = 0f;
+            ResetAccEffects();
         }
 
         public override void UpdateDead()
         {
-            SpeedMult = 1f;
-            CritChanceBonus = 0f;
+            ResetAccEffects();
         }
 
         public override void ResetEffects()
         {
-            SpeedMult = 1f;
-            CritChanceBonus = 0f;
+            ResetAccEffects();
             base.ResetEffects();
         }
 
@@ -45,16 +48,28 @@ namespace ReforgesReforged.Common.ModPlayers
 
         public override void PostUpdateEquips()
         {
+
             if (player.HeldItem.prefix == ModContent.PrefixType<Vitrified>())
             {
                 player.statDefense *= 0.8f;
             }
+
+
+            //todo: make not bad
+            int FinalStacks = MinversionStack;
+            if (MinversionStack > 0 && player.maxMinions < MinversionStack) FinalStacks -= MinversionStack - player.maxMinions;
+            if (MinversionStack < 0 && player.maxTurrets < MinversionStack) FinalStacks += MinversionStack - player.maxTurrets;
+
+            player.maxMinions -= FinalStacks;
+            player.maxTurrets += FinalStacks;
+
+
             base.PostUpdateEquips();
+
         }
 
         public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
         {
-
 
             /*
             if (player.HeldItem.prefix == ModContent.PrefixType<whateverprefix>())
@@ -62,6 +77,7 @@ namespace ReforgesReforged.Common.ModPlayers
                 modifiers.CritDamage += 10.0f;
             }
             */
+
         }
     }
 }

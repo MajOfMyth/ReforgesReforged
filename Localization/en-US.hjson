@@ -8,6 +8,8 @@ Mods: {
 		LifeRegen: life regen
 		Damage: damage
 		CritChance: critical strike chance
+		MaxMinions: max minions
+		MaxSentries: max sentries
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
@@ -20,6 +22,8 @@ Mods: {
 			Overclocked.DisplayName: Overclocked
 			Vitrified.DisplayName: Vitrified
 			Cursed.DisplayName: Cursed
+			Bastion.DisplayName: Bastion
+			Bombarding.DisplayName: Bombarding
 		}
 	}
 }
