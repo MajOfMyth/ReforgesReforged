@@ -1,1 +1,5 @@
-This description will show up on the steam page, check out https://steamcommunity.com/comment/Guide/formattinghelp.
+The goal of Reforges Reforged is to create a dynamic reforge mod, allowing for more buildcraft potential and encouraging side playstyles, while maintaining balance overall for both the crazy and the simple players.
+
+https://github.com/MajOfMyth/ReforgesReforged
+
+WIP
