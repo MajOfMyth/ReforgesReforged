@@ -22,14 +22,14 @@ namespace ReforgesReforged.Content.Prefixes.Weapons
         public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
         {
             damageMult += 0.5f;
-            critBonus += 15;
             useTimeMult -= 0.15f;
             manaMult += 1f;
+            critBonus += 15;
         }
 
         public override void ModifyValue(ref float valueMult)
         {
-            valueMult *= 4f;
+            valueMult *= 8f;
         }
 
     }

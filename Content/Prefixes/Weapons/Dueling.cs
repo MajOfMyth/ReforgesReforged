@@ -15,6 +15,7 @@ namespace ReforgesReforged.Content.Prefixes.Weapons
 
         public override bool CanRoll(Item item)
         {
+            if (item.DamageType == DamageClass.Summon) return false;
             return true;
         }
 

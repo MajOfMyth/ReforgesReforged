@@ -16,9 +16,10 @@ Mods: {
 		MiningSpeed: mining speed
 		BreathMax: breath
 		Thorns: thorns
-		SolitaryInfo: grows stronger with each unused minion slot
-		DevouringInfo: deals 5% max health as damage when hitting an enemy
-		AutomaticInfo: gains auto usage
+		SolitaryInfo: Grows stronger with each unused minion slot
+		DevouringInfo: Deals 5% max health as damage when hitting an enemy
+		AutomaticInfo: Gains auto-use
+		MartyrInfo: Instantly kills the player after use
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous

@@ -8,11 +8,11 @@ namespace ReforgesReforged.Common.GlobalItems
     internal class RRGlobalItem : GlobalItem
     {
 
-        //todo: add tooltip
         public override void ModifyWeaponDamage(Item item, Player player, ref StatModifier damage)
         {
 
-            if(item.prefix == ModContent.PrefixType<Solitary>())
+            //todo: add tooltip
+            if (item.prefix == ModContent.PrefixType<Solitary>())
             {
                 float multiplier = 1f;
                 float unusedSlots = player.maxMinions - player.slotsMinions;
