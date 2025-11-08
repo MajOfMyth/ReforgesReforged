@@ -11,9 +11,9 @@ Mods: {
 		MaxMinions: max minions
 		MaxSentries: max sentries
 		SummonDamage: summon damage
-		GenericSpeedWord: speed
+		Endurance: damage reduction
+
 		SolitaryInfo: grows stronger with each unused minion slot
-		AutomaticInfo: gains auto usage
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
@@ -30,9 +30,8 @@ Mods: {
 			Bombarding.DisplayName: Bombarding
 			Sacrificial.DisplayName: Sacrificial
 			Solitary.DisplayName: Solitary
-			Automatic.DisplayName: Automatic
+			Reinforced.DisplayName: Reinforced
 			Rejuvenating.DisplayName: Rejuvenating
-			Masterful.DisplayName: Masterful
 		}
 	}
 }
