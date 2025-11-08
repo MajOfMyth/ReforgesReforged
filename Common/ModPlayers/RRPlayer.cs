@@ -1,6 +1,8 @@
 ﻿using ReforgesReforged.Content.Prefixes.Weapons;
 using System;
 using Terraria;
+using Terraria.DataStructures;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace ReforgesReforged.Common.ModPlayers
@@ -83,13 +85,19 @@ namespace ReforgesReforged.Common.ModPlayers
         public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
         {
 
-            /*
-            if (player.HeldItem.prefix == ModContent.PrefixType<whateverprefix>())
+            if (player.HeldItem.prefix == ModContent.PrefixType<Devouring>())
             {
-                modifiers.CritDamage += 10.0f;
+                int Damage = (int)Math.Round(player.statLifeMax2 * 0.05f); 
+                player.Hurt(
+                    PlayerDeathReason.ByCustomReason(NetworkText.FromKey("Mods.ReforgesReforged.Deaths.Devoured", player.name)), 
+                    Damage, 
+                    0,
+                    dodgeable: false,
+                    scalingArmorPenetration: 1f
+                );
             }
-            */
 
         }
+
     }
 }

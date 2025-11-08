@@ -12,8 +12,8 @@ Mods: {
 		MaxSentries: max sentries
 		SummonDamage: summon damage
 		Endurance: damage reduction
-
 		SolitaryInfo: grows stronger with each unused minion slot
+		DevouringInfo: deals 5% max health as damage when hitting an enemy
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
@@ -32,6 +32,11 @@ Mods: {
 			Solitary.DisplayName: Solitary
 			Reinforced.DisplayName: Reinforced
 			Rejuvenating.DisplayName: Rejuvenating
+			Devouring.DisplayName: Devouring
+			Automatic.DisplayName: Automatic
+			Masterful.DisplayName: Masterful
 		}
+
+		Deaths.Devoured: "{0} was devoured..."
 	}
 }
