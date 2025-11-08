@@ -36,7 +36,6 @@ namespace ReforgesReforged.Content.Prefixes.Weapons
             yield return new TooltipLine(Mod, "AutomaticTooltip", AutomaticTooltip.Value)
             {
                 IsModifier = true,
-                IsModifierBad = true,
             };
 
         }

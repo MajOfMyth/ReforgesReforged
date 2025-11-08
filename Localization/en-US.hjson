@@ -12,9 +12,11 @@ Mods: {
 		MaxSentries: max sentries
 		SummonDamage: summon damage
 		Endurance: damage reduction
+		FishingSkill: fishing
+		MiningSpeed: mining speed
 		SolitaryInfo: grows stronger with each unused minion slot
 		DevouringInfo: deals 5% max health as damage when hitting an enemy
-		MartyrInfo: instantly kills the player after use
+		AutomaticInfo: gains auto usage
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
@@ -36,12 +38,10 @@ Mods: {
 			Devouring.DisplayName: Devouring
 			Automatic.DisplayName: Automatic
 			Masterful.DisplayName: Masterful
-			Martyr.DisplayName: Martyr
+			Hasted.DisplayName: Hasted
+			Luring.DisplayName: Luring
 		}
 
-		Deaths: {
-			Devoured: "{0} was devoured..."
-			Martyr: "{0} became a martyr..."
-		}
+		Deaths.Devoured: "{0} was devoured..."
 	}
 }
