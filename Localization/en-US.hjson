@@ -38,6 +38,8 @@ Mods: {
 			Devouring.DisplayName: Devouring
 			Automatic.DisplayName: Automatic
 			Masterful.DisplayName: Masterful
+			Hasted.DisplayName: Hasted
+			Luring.DisplayName: Luring
 		}
 
 		Deaths.Devoured: "{0} was devoured..."
