@@ -1,4 +1,5 @@
-﻿using ReforgesReforged.Content.Prefixes.Weapons;
+﻿using Microsoft.Xna.Framework;
+using ReforgesReforged.Content.Prefixes.Weapons;
 using System;
 using Terraria;
 using Terraria.DataStructures;
@@ -97,6 +98,21 @@ namespace ReforgesReforged.Common.ModPlayers
                 );
             }
 
+        }
+
+        public override bool Shoot(Item item, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+        {
+
+            if(item.prefix == ModContent.PrefixType<Martyr>())
+            {
+                source.Player.KillMe(
+                    PlayerDeathReason.ByCustomReason(NetworkText.FromKey("Mods.ReforgesReforged.Deaths.Martyr", player.name)),
+                    9999999,
+                    0
+                );
+            }
+
+            return base.Shoot(item, source, position, velocity, type, damage, knockback);
         }
 
     }

@@ -14,6 +14,7 @@ Mods: {
 		Endurance: damage reduction
 		SolitaryInfo: grows stronger with each unused minion slot
 		DevouringInfo: deals 5% max health as damage when hitting an enemy
+		MartyrInfo: instantly kills the player after use
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
@@ -35,8 +36,12 @@ Mods: {
 			Devouring.DisplayName: Devouring
 			Automatic.DisplayName: Automatic
 			Masterful.DisplayName: Masterful
+			Martyr.DisplayName: Martyr
 		}
 
-		Deaths.Devoured: "{0} was devoured..."
+		Deaths: {
+			Devoured: "{0} was devoured..."
+			Martyr: "{0} became a martyr..."
+		}
 	}
 }
