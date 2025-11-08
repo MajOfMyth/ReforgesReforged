@@ -6,62 +6,113 @@ WIP
 
 ## Weapon Reforges
 Alacritous - Ranged
-	-50% Damage
-	+40% Attack Speed
+
+`-50% Damage`
+
+`+40% Attack Speed`
+
+.
 
 Vacous - Magic / Summons
-	-50% Damage
-	-100% Mana Cost
+
+`-50% Damage`
+
+`-100% Mana Cost`
+
+.
 
 Besieging - Not Summons
-	+100% Damage
-	-90% Attack Speed
+
+`+100% Damage`
+
+`-90% Attack Speed`
+
+.
 
 Enormous - Melee / Whips*
-	-50% Attack Speed
-	+100% Size
+
+`-50% Attack Speed`
+
+`+100% Size`
+
+.
 
 Dueling - Melee
-	+15% Damage
-	+15% Attack Speed
-	-15% Size
-	+15% Critical Strike Chance
+
+`+15% Damage`
+
+`+15% Attack Speed`
+
+`-15% Size`
+
+`+15% Critical Strike Chance`
+
+.
 
 Overclocked - Magic
-	+50% Damage
-	+15% Attack Speed
-	+15% Critical Strike Chance
-	+100% Mana Cost
+
+`+50% Damage`
+
+`+15% Attack Speed`
+
+`+15% Critical Strike Chance`
+
+`+100% Mana Cost`
+
+.
 
 Vitrified - Not Summons
-	+25% Damage
-	+15% Attack Speed
-	+5% Critical Strike Chance
-	-20% Defense
+
+`+25% Damage`
+
+`+15% Attack Speed`
+
+`+5% Critical Strike Chance`
+
+`-20% Defense`
+
+.
 
 Solitary - Whips
-	+15% Attack Speed
-	Grows stronger with each unused minion slot (+5%)
+
+`+15% Attack Speed`
+
+`Grows stronger with each unused minion slot (+5%)`
+
+.
 
 Devouring - Melee / Whips
-	+32% Damage
-	+15% Attack Speed
-	+5% Critical Strike Chance
-	Deals 5% max health as damage when hitting an enemy
+
+`+32% Damage`
+
+`+15% Attack Speed`
+
+`+5% Critical Strike Chance`
+
+`Deals 5% max health as damage when hitting an enemy`
+
+.
 
 Automatic - Ranged (Without auto-use)
-	+10% Attack Speed
-	gains auto-use
+
+`+10% Attack Speed`
+
+`Gains auto-use`
+
+.
 
 Martyr - Magic
-	+99% Damage PreHardmode
-	+999% Damage Hardmode
-	+9999% Damage Post Moonlord
-	+25% Critical Strike Chance
-	Instantly kills the player after use
 
+`+99% Damage PreHardmode`
 
+`+999% Damage Hardmode`
 
+`+9999% Damage Post Moonlord`
 
+`+25% Critical Strike Chance`
+
+`Instantly kills the player after use`
+
+.
 
 *The size stat has no effect on whips
