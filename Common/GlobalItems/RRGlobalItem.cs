@@ -18,6 +18,10 @@ namespace ReforgesReforged.Common.GlobalItems
                 multiplier += unusedSlots * 0.05f;
                 damage += multiplier;
             }
+            if (item.prefix == ModContent.PrefixType<Automatic>())
+            {
+                item.autoReuse = true;
+            }
         }
         
     }

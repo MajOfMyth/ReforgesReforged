@@ -13,6 +13,7 @@ Mods: {
 		SummonDamage: summon damage
 		GenericSpeedWord: speed
 		SolitaryInfo: grows stronger with each unused minion slot
+		AutomaticInfo: gains auto usage
 
 		Prefixes: {
 			Alacritous.DisplayName: Alacritous
@@ -29,6 +30,9 @@ Mods: {
 			Bombarding.DisplayName: Bombarding
 			Sacrificial.DisplayName: Sacrificial
 			Solitary.DisplayName: Solitary
+			Automatic.DisplayName: Automatic
+			Rejuvenating.DisplayName: Rejuvenating
+			Masterful.DisplayName: Masterful
 		}
 	}
 }
