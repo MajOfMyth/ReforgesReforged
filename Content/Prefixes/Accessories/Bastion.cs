@@ -4,9 +4,9 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace ReforgesReforged.Content.Prefixes
+namespace ReforgesReforged.Content.Prefixes.Accessories
 {
-    public class Bombarding : ModPrefix
+    public class Bastion : ModPrefix
     {
 
         public override PrefixCategory Category => PrefixCategory.Accessory;
@@ -23,7 +23,7 @@ namespace ReforgesReforged.Content.Prefixes
 
         public override void ApplyAccessoryEffects(Player player)
         {
-            player.GetModPlayer<RRPlayer>().MinversionStack--;
+            player.GetModPlayer<RRPlayer>().MinversionStack++;
         }
 
         public override void ModifyValue(ref float valueMult)
@@ -34,11 +34,11 @@ namespace ReforgesReforged.Content.Prefixes
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
 
-            yield return new TooltipLine(Mod, "MaxMinionsTooltip", "+1 " + MaxMinionsTooltip.Value)
+            yield return new TooltipLine(Mod, "MaxSentriesTooltip", "+1 " + MaxSentriesTooltip.Value)
             {
                 IsModifier = true,
             };
-            yield return new TooltipLine(Mod, "MaxSentriesTooltip", "-1 " + MaxSentriesTooltip.Value)
+            yield return new TooltipLine(Mod, "MaxMinionsTooltip", "-1 " + MaxMinionsTooltip.Value)
             {
                 IsModifier = true,
                 IsModifierBad = true,
@@ -46,8 +46,8 @@ namespace ReforgesReforged.Content.Prefixes
 
         }
 
-        public LocalizedText MaxMinionsTooltip => Mod.GetLocalization($"MaxMinions");
         public LocalizedText MaxSentriesTooltip => Mod.GetLocalization($"MaxSentries");
+        public LocalizedText MaxMinionsTooltip => Mod.GetLocalization($"MaxMinions");
 
     }
 }

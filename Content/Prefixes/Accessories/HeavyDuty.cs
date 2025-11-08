@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace ReforgesReforged.Content.Prefixes
+namespace ReforgesReforged.Content.Prefixes.Accessories
 {
     public class HeavyDuty : ModPrefix
     {

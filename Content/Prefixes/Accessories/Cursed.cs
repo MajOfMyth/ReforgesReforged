@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace ReforgesReforged.Content.Prefixes
+namespace ReforgesReforged.Content.Prefixes.Accessories
 {
     public class Cursed : ModPrefix
     {
@@ -22,10 +22,10 @@ namespace ReforgesReforged.Content.Prefixes
 
         public override void ApplyAccessoryEffects(Player player)
         {
-            player.GetDamage(DamageClass.Generic) *= 1.05f;
+            player.GetDamage(DamageClass.Generic) += 1.05f;
             player.GetAttackSpeed(DamageClass.Generic) += 0.05f;
             player.GetCritChance(DamageClass.Generic) += 5;
-            player.lifeRegen -= 1;
+            player.lifeRegen -= 2;
         }
 
         public override void ModifyValue(ref float valueMult)
@@ -48,7 +48,7 @@ namespace ReforgesReforged.Content.Prefixes
             {
                 IsModifier = true,
             };
-            yield return new TooltipLine(Mod, "LifeRegenTooltip", "-1 " + LifeRegenTooltip.Value)
+            yield return new TooltipLine(Mod, "LifeRegenTooltip", "-2 " + LifeRegenTooltip.Value)
             {
                 IsModifier = true,
                 IsModifierBad = true,

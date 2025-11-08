@@ -1,12 +1,14 @@
-﻿using Terraria;
+﻿using System.Collections.Generic;
+using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace ReforgesReforged.Content.Prefixes
+namespace ReforgesReforged.Content.Prefixes.Weapons
 {
-    public class Besieging : ModPrefix
+    public class Enormous : ModPrefix
     {
 
-        public override PrefixCategory Category => PrefixCategory.AnyWeapon;
+        public override PrefixCategory Category => PrefixCategory.Melee;
 
         public override float RollChance(Item item)
         {
@@ -15,19 +17,18 @@ namespace ReforgesReforged.Content.Prefixes
 
         public override bool CanRoll(Item item)
         {
-            if (item.DamageType == DamageClass.Summon) return false;
             return true;
         }
 
         public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
         {
-            damageMult += 1f;
-            useTimeMult += 0.9f;
+            scaleMult += 1f;
+            useTimeMult += 0.5f;
         }
 
         public override void ModifyValue(ref float valueMult)
         {
-            valueMult *= 7f;
+            valueMult *= 1.15f;
         }
 
     }

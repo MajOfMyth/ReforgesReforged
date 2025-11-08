@@ -1,12 +1,11 @@
-﻿using ReforgesReforged.Common.ModPlayers;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace ReforgesReforged.Content.Prefixes
+namespace ReforgesReforged.Content.Prefixes.Accessories
 {
-    public class Bastion : ModPrefix
+    public class Attuned : ModPrefix
     {
 
         public override PrefixCategory Category => PrefixCategory.Accessory;
@@ -23,7 +22,8 @@ namespace ReforgesReforged.Content.Prefixes
 
         public override void ApplyAccessoryEffects(Player player)
         {
-            player.GetModPlayer<RRPlayer>().MinversionStack++;
+            player.statManaMax2 += 10;
+            player.manaRegenBonus += 5;
         }
 
         public override void ModifyValue(ref float valueMult)
@@ -34,20 +34,19 @@ namespace ReforgesReforged.Content.Prefixes
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
 
-            yield return new TooltipLine(Mod, "MaxSentriesTooltip", "+1 " + MaxSentriesTooltip.Value)
+            yield return new TooltipLine(Mod, "MaxManaTooltip", "+10 " + MaxManaTooltip.Value)
             {
                 IsModifier = true,
             };
-            yield return new TooltipLine(Mod, "MaxMinionsTooltip", "-1 " + MaxMinionsTooltip.Value)
+            yield return new TooltipLine(Mod, "ManaRegenTooltip", "+5 " + ManaRegenTooltip.Value)
             {
                 IsModifier = true,
-                IsModifierBad = true,
             };
 
         }
 
-        public LocalizedText MaxSentriesTooltip => Mod.GetLocalization($"MaxSentries");
-        public LocalizedText MaxMinionsTooltip => Mod.GetLocalization($"MaxMinions");
+        public LocalizedText MaxManaTooltip => Mod.GetLocalization($"MaxMana");
+        public LocalizedText ManaRegenTooltip => Mod.GetLocalization($"ManaRegen");
 
     }
 }

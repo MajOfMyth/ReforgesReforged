@@ -1,4 +1,4 @@
-﻿using ReforgesReforged.Content.Prefixes;
+﻿using ReforgesReforged.Content.Prefixes.Weapons;
 using System;
 using Terraria;
 using Terraria.ModLoader;
