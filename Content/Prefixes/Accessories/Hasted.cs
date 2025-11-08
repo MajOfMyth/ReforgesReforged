@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace ReforgesReforged.Content.Prefixes.Accessories
 {
-    public class Attuned : ModPrefix
+    public class Hasted : ModPrefix
     {
 
         public override PrefixCategory Category => PrefixCategory.Accessory;
