@@ -1,3 +1,4 @@
 displayName = Reforges Reforged
 author = Team RGB
-version = 0.1sortAfter = ThoriumMod
+version = 0.1
+sortAfter = ThoriumMod
