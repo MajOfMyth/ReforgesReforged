@@ -83,7 +83,7 @@ namespace ReforgesReforged.Common.GlobalItems
             //todo: add tooltip
             if (item.prefix == ModContent.PrefixType<Solitary>())
             {
-                float multiplier = 1f;
+                float multiplier = 0f;
                 float unusedSlots = player.maxMinions - player.slotsMinions;
                 multiplier += unusedSlots * 0.05f;
                 damage += multiplier;
@@ -99,6 +99,12 @@ namespace ReforgesReforged.Common.GlobalItems
                 if (Main.hardMode) damage += 9f;
                 if (NPC.downedMoonlord) damage += 90f;
             }
+
+            if (item.prefix == ModContent.PrefixType<True>())
+            {
+                item.shoot = ProjectileID.None;
+            }
+
         }
         
     }

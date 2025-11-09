@@ -62,6 +62,7 @@ Mods: {
 			CloudBorn.DisplayName: Cloud-Born
 			Floaty.DisplayName: Floaty
 			Shielding.DisplayName: Shielding
+			True.DisplayName: True
 		}
 
 		Deaths: {

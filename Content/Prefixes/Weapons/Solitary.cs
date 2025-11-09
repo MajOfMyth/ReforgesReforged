@@ -12,8 +12,8 @@ namespace ReforgesReforged.Content.Prefixes.Weapons
 
         public override float RollChance(Item item)
         {
-            if (item.DamageType == DamageClass.Melee) return 0f;
-            return 1f;
+            if (item.DamageType == DamageClass.SummonMeleeSpeed) return 1f;
+            return 0f;
         }
 
         public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)

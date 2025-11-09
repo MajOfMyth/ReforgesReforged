@@ -1,5 +1,5 @@
 displayName = Reforges Reforged
 author = Team RGB
-version = 0.1
-weakReferences = ThoriumMod
-sortAfter = ThoriumMod
+version = 0.2
+weakReferences = ThoriumMod, CalamityMod
+sortAfter = ThoriumMod, CalamityMod
