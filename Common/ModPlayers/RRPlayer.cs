@@ -57,6 +57,12 @@ namespace ReforgesReforged.Common.ModPlayers
                 player.statDefense *= 0.8f;
             }
 
+            //Enormous
+            if(player.HeldItem.prefix == ModContent.PrefixType<Enormous>())
+            {
+                player.whipRangeMultiplier += 1f;
+            }
+
 
             //share the same variable for final values
             int FinalStacks = 0;

@@ -23,6 +23,7 @@ Mods: {
 		MiningSpeed: mining speed
 		BreathMax: breath
 		Thorns: thorns
+		WhipRange: whip range
 		InfiniteFlight: Infinite flight
 		NoDamage: Deal no damage
 		SolitaryInfo: Grows stronger with each unused minion slot
@@ -59,6 +60,8 @@ Mods: {
 			Hydrating.DisplayName: Hydrating
 			Soaring.DisplayName: Soaring
 			CloudBorn.DisplayName: Cloud-Born
+			Floaty.DisplayName: Floaty
+			Shielding.DisplayName: Shielding
 		}
 
 		Deaths: {
