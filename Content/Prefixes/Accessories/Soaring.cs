@@ -17,7 +17,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override bool CanRoll(Item item)
         {
-            if (item.wingSlot > -1 && NPC.down) return true;
+            if (item.wingSlot > -1 && NPC.downedEmpressOfLight) return true;
             return false;
         }
 
