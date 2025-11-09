@@ -13,13 +13,8 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override float RollChance(Item item)
         {
-            return 1f;
-        }
-
-        public override bool CanRoll(Item item)
-        {
-            if (item.expert) return true;
-            return false;
+            if (item.expert) return 1f;
+            return 0f;
         }
 
         public override void ApplyAccessoryEffects(Player player)

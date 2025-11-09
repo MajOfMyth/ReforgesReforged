@@ -1,5 +1,4 @@
-﻿using ReforgesReforged.Common.ModPlayers;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -14,11 +13,6 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
         public override float RollChance(Item item)
         {
             return 1f;
-        }
-
-        public override bool CanRoll(Item item)
-        {
-            return true;
         }
 
         public override void ApplyAccessoryEffects(Player player)

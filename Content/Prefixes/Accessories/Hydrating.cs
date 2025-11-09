@@ -14,13 +14,8 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override float RollChance(Item item)
         {
-            return 1f;
-        }
-
-        public override bool CanRoll(Item item)
-        {
-            if (ModLoader.TryGetMod("ThoriumMod", out Mod mod)) return true;
-            return false;
+            if (ModLoader.TryGetMod("ThoriumMod", out Mod mod)) return 1f;
+            return 0f;
         }
 
         public override void ApplyAccessoryEffects(Player player)

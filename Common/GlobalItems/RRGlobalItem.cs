@@ -94,6 +94,11 @@ namespace ReforgesReforged.Common.GlobalItems
                 item.autoReuse = true;
             }
 
+            if(item.prefix == ModContent.PrefixType<Martyr>())
+            {
+                if (Main.hardMode) damage += 9f;
+                if (NPC.downedMoonlord) damage += 90f;
+            }
         }
         
     }

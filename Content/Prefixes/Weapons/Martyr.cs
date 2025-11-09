@@ -12,22 +12,14 @@ namespace ReforgesReforged.Content.Prefixes.Weapons
 
         public override float RollChance(Item item)
         {
+            if (item.DamageType == DamageClass.Summon) return 0f;
             return 1f;
-        }
-
-        public override bool CanRoll(Item item)
-        {
-            if (item.DamageType == DamageClass.Summon) return false;
-            return true;
         }
 
         public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
         {
             damageMult += 0.99f;
             critBonus += 25;
-
-            if (Main.hardMode) damageMult += 9f;
-            if (NPC.downedMoonlord) damageMult += 90f;
         }
 
         public override void ModifyValue(ref float valueMult)

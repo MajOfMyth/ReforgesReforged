@@ -16,11 +16,6 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
             return 1f;
         }
 
-        public override bool CanRoll(Item item)
-        {
-            return true;
-        }
-
         public override void ApplyAccessoryEffects(Player player)
         {
             player.statDefense += 6;
