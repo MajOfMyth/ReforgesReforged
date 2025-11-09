@@ -10,6 +10,7 @@ Mods: {
 		ManaRegen: mana regen
 		Defense: defense
 		MovementSpeed: movement speed
+		FlightTime: flight time
 		AttackSpeed: attack speed
 		Damage: damage
 		CritChance: critical strike chance
@@ -53,6 +54,8 @@ Mods: {
 			Spiked.DisplayName: Spiked
 			Inspiring.DisplayName: Inspiring
 			Hydrating.DisplayName: Hydrating
+			Soaring.DisplayName: Soaring
+			CloudBorn.DisplayName: Cloud-Born
 		}
 
 		Deaths: {
