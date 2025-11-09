@@ -44,6 +44,7 @@ namespace ReforgesReforged.Common.ModPlayers
         public override void PostUpdateRunSpeeds()
         {
             player.accRunSpeed *= SpeedMult;
+            player.maxRunSpeed *= SpeedMult;
             base.PostUpdateRunSpeeds();
         }
 

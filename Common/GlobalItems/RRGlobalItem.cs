@@ -1,5 +1,4 @@
 ﻿using ReforgesReforged.Content.Prefixes.Weapons;
-using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
