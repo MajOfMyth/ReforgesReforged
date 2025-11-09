@@ -62,5 +62,16 @@ Mods: {
 			Devoured: "{0} was devoured..."
 			Martyr: "{0} became a martyr..."
 		}
+
+		Configs: {
+			RRConfig: {
+				DisplayName: Reforges Reforged Config
+
+				RemoveRedundant: {
+					Label: Remove Redundant Reforges
+					Tooltip: Removes some vanilla reforges as to not bloat the reforge count.
+				}
+			}
+		}
 	}
 }
