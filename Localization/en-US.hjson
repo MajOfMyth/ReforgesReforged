@@ -25,7 +25,7 @@ Mods: {
 		Thorns: thorns
 		WhipRange: whip range
 		InfiniteFlight: Infinite flight
-		NoDamage: Deal no damage
+		NoDamage: No damage
 		SolitaryInfo: Grows stronger with each unused minion slot
 		DevouringInfo: Deals 5% max health as damage when hitting an enemy
 		AutomaticInfo: Gains auto-use

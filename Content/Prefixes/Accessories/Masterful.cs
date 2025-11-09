@@ -38,11 +38,11 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
 
-            yield return new TooltipLine(Mod, "DamageTooltip", "x1.02 " + DamageTooltip.Value)
+            yield return new TooltipLine(Mod, "DamageTooltip", "1.02x " + DamageTooltip.Value)
             {
                 IsModifier = true,
             };
-            yield return new TooltipLine(Mod, "AttackSpeedTooltip", "x1.02 " + AttackSpeedTooltip.Value)
+            yield return new TooltipLine(Mod, "AttackSpeedTooltip", "1.02x " + AttackSpeedTooltip.Value)
             {
                 IsModifier = true,
             };
