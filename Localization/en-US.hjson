@@ -1,6 +1,7 @@
 Mods: {
 	ReforgesReforged: {
 		MaxLife: maximum life
+		MaxInspiration: maximum inspiration
 		MaxMana: maximum mana
 		ManaRegen: mana regen
 		Defense: defense
@@ -47,6 +48,7 @@ Mods: {
 			Martyr.DisplayName: Martyr
 			Amphibious.DisplayName: Amphibious
 			Spiked.DisplayName: Spiked
+			Inspiring.DisplayName: Inspiring
 		}
 
 		Deaths: {
