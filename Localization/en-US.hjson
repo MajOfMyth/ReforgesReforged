@@ -1,13 +1,16 @@
 Mods: {
 	ReforgesReforged: {
 		MaxLife: maximum life
+		LifeRegen: life regen
 		MaxInspiration: maximum inspiration
+		InspirationRegen: inspiration regen
+		MaxExhaustion: maximum exhaustion
+		ExhaustionRegen: exhaustion regen
 		MaxMana: maximum mana
 		ManaRegen: mana regen
 		Defense: defense
 		MovementSpeed: movement speed
 		AttackSpeed: attack speed
-		LifeRegen: life regen
 		Damage: damage
 		CritChance: critical strike chance
 		MaxMinions: max minions
@@ -49,6 +52,7 @@ Mods: {
 			Amphibious.DisplayName: Amphibious
 			Spiked.DisplayName: Spiked
 			Inspiring.DisplayName: Inspiring
+			Hydrating.DisplayName: Hydrating
 		}
 
 		Deaths: {
