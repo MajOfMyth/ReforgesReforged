@@ -23,6 +23,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override void ApplyAccessoryEffects(Player player)
         {
+            player.statLifeMax2 += 10;
             player.lifeRegen += 2;
         }
 
@@ -34,6 +35,10 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
 
+            yield return new TooltipLine(Mod, "MaxLifeTooltip", "10 " + MaxLifeTooltip.Value)
+            {
+                IsModifier = true,
+            };
             yield return new TooltipLine(Mod, "LifeRegenTooltip", "2 " + LifeRegenTooltip.Value)
             {
                 IsModifier = true,
@@ -41,6 +46,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         }
 
+        public LocalizedText MaxLifeTooltip => Mod.GetLocalization($"MaxLife");
         public LocalizedText LifeRegenTooltip => Mod.GetLocalization($"LifeRegen");
     }
 }

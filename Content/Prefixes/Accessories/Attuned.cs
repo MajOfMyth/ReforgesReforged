@@ -23,7 +23,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
         public override void ApplyAccessoryEffects(Player player)
         {
             player.statManaMax2 += 10;
-            player.manaRegenBonus += 5;
+            player.manaRegenBonus += 2;
         }
 
         public override void ModifyValue(ref float valueMult)

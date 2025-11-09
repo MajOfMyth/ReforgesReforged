@@ -1,5 +1,6 @@
 Mods: {
 	ReforgesReforged: {
+		MaxLife: maximum life
 		MaxMana: maximum mana
 		ManaRegen: mana regen
 		Defense: defense
