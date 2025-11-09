@@ -29,11 +29,17 @@ Besieging - Not Summons
 
 .
 
-Enormous - Melee / Whips*
+Enormous - Melee / Whips
+
+`+15% Damage`
 
 `-50% Attack Speed`
 
+`+5% Critical Strike Chance`
+
 `+100% Size`
+
+`+100% Whip Range`
 
 .
 
@@ -114,5 +120,3 @@ Martyr - Magic
 `Instantly kills the player after use`
 
 .
-
-*The size stat has no effect on whips
