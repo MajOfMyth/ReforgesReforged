@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace ReforgesReforged.Content.Prefixes.Accessories
 {
-    public class Soaring : ModPrefix
+    public class Floaty : ModPrefix
     {
 
         public override PrefixCategory Category => PrefixCategory.Accessory;
@@ -17,14 +17,13 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override bool CanRoll(Item item)
         {
-            if (item.wingSlot > -1 && NPC.down) return true;
+            if (item.balloonSlot > -1) return true;
             return false;
         }
 
         public override void ApplyAccessoryEffects(Player player)
         {
-            player.empressBrooch = true;
-            player.GetDamage(DamageClass.Generic) *= 0f;
+            player.jumpSpeedBoost += 0.1f;
         }
 
         public override void ModifyValue(ref float valueMult)
@@ -35,19 +34,14 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
 
-            yield return new TooltipLine(Mod, "InfiniteFlight", InfiniteFlightTooltip.Value)
+            yield return new TooltipLine(Mod, "JumpBoost", "+10% " + JumpBoostTooltip.Value)
             {
                 IsModifier = true,
-            };
-            yield return new TooltipLine(Mod, "NoDamage", NoDamageTooltip.Value)
-            {
-                IsModifier = true,
-                IsModifierBad = true,
             };
 
         }
-        public LocalizedText InfiniteFlightTooltip => Mod.GetLocalization($"InfiniteFlight");
-        public LocalizedText NoDamageTooltip => Mod.GetLocalization($"NoDamage");
+
+        public LocalizedText JumpBoostTooltip => Mod.GetLocalization($"JumpBoost");
 
     }
 }

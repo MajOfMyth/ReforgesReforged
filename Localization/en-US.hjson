@@ -11,6 +11,7 @@ Mods: {
 		Defense: defense
 		MovementSpeed: movement speed
 		FlightTime: flight time
+		JumpBoost: jump speed
 		AttackSpeed: attack speed
 		Damage: damage
 		CritChance: critical strike chance
@@ -22,6 +23,8 @@ Mods: {
 		MiningSpeed: mining speed
 		BreathMax: breath
 		Thorns: thorns
+		InfiniteFlight: Infinite flight
+		NoDamage: Deal no damage
 		SolitaryInfo: Grows stronger with each unused minion slot
 		DevouringInfo: Deals 5% max health as damage when hitting an enemy
 		AutomaticInfo: Gains auto-use

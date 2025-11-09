@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace ReforgesReforged.Content.Prefixes.Accessories
 {
-    public class Soaring : ModPrefix
+    public class Shielding : ModPrefix
     {
 
         public override PrefixCategory Category => PrefixCategory.Accessory;
@@ -17,14 +17,14 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override bool CanRoll(Item item)
         {
-            if (item.wingSlot > -1 && NPC.down) return true;
+            if (item.shieldSlot > -1) return true;
             return false;
         }
 
         public override void ApplyAccessoryEffects(Player player)
         {
-            player.empressBrooch = true;
-            player.GetDamage(DamageClass.Generic) *= 0f;
+            player.statDefense += 4;
+            player.endurance += 0.04f;
         }
 
         public override void ModifyValue(ref float valueMult)
@@ -35,19 +35,19 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
 
-            yield return new TooltipLine(Mod, "InfiniteFlight", InfiniteFlightTooltip.Value)
+            yield return new TooltipLine(Mod, "Defense", "+4 " + DefenseTooltip.Value)
             {
                 IsModifier = true,
             };
-            yield return new TooltipLine(Mod, "NoDamage", NoDamageTooltip.Value)
+            yield return new TooltipLine(Mod, "Endurance", "+4% " + EnduranceTooltip.Value)
             {
                 IsModifier = true,
-                IsModifierBad = true,
             };
 
         }
-        public LocalizedText InfiniteFlightTooltip => Mod.GetLocalization($"InfiniteFlight");
-        public LocalizedText NoDamageTooltip => Mod.GetLocalization($"NoDamage");
+
+        public LocalizedText DefenseTooltip => Mod.GetLocalization($"Defense");
+        public LocalizedText EnduranceTooltip => Mod.GetLocalization($"Endurance");
 
     }
 }
