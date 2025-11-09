@@ -19,7 +19,8 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override bool CanRoll(Item item)
         {
-            return true;
+            if (ModLoader.TryGetMod("ThoriumMod", out Mod mod)) return true;
+            return false;
         }
 
         public override void ApplyAccessoryEffects(Player player)
