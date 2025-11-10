@@ -17,7 +17,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
 
         public override void ApplyAccessoryEffects(Player player)
         {
-            player.GetDamage(DamageClass.Generic) += 1.05f;
+            player.GetDamage(DamageClass.Generic) += 0.05f;
             player.GetAttackSpeed(DamageClass.Generic) += 0.05f;
             player.GetCritChance(DamageClass.Generic) += 5;
             player.lifeRegen -= 2;
