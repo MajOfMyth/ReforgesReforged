@@ -22,7 +22,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
             player.GetDamage(DamageClass.Generic) *= 1.02f;
             player.GetAttackSpeed(DamageClass.Generic) *= 1.02f;
             player.endurance -= 0.10f;
-            player.GetModPlayer<RRPlayer>().SpeedMult += 1.1f;
+            player.GetModPlayer<RRPlayer>().SpeedMult += 0.1f;
         }
 
         public override void ModifyValue(ref float valueMult)
