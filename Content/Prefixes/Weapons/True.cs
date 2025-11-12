@@ -17,10 +17,10 @@ namespace ReforgesReforged.Content.Prefixes.Weapons
 
         public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
         {
-            damageMult += 0.80f;
-            useTimeMult -= 0.45f;
+            damageMult += 0.4f;
+            useTimeMult -= 0.2f;
             scaleMult += 0.75f;
-            critBonus += 8;
+            critBonus += 5;
         }
 
         public override void Apply(Item item)
