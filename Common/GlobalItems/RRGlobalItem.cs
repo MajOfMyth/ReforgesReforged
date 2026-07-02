@@ -9,7 +9,7 @@ namespace ReforgesReforged.Common.GlobalItems
     internal class RRGlobalItem : GlobalItem
     {
 
-        public static int[] IllegalPrefixes = [
+        public static int[] IllegalAccessory = [
             PrefixID.Hard,
             PrefixID.Guarding,
             PrefixID.Armored,
@@ -26,9 +26,10 @@ namespace ReforgesReforged.Common.GlobalItems
 
             PrefixID.Wild,
             PrefixID.Rash,
-            PrefixID.Intrepid,
+            PrefixID.Intrepid
+        ];
 
-
+        public static int[] IllegalWeapon = [
             PrefixID.Keen,
             PrefixID.Superior,
             PrefixID.Forceful,
@@ -72,7 +73,11 @@ namespace ReforgesReforged.Common.GlobalItems
 
         public override bool AllowPrefix(Item item, int pre)
         {
-            if (RRConfig.Instance.RemoveRedundant && IllegalPrefixes.Contains(pre)) return false;
+            if (RRConfig.Instance.RemoveRedundant)
+            {
+                if (IllegalAccessory.Contains(pre) && !ModLoader.TryGetMod("CalamityMod", out Mod mod)) return false;
+                if (IllegalWeapon.Contains(pre)) return false;
+            }
             return true;
         }
 
@@ -88,12 +93,7 @@ namespace ReforgesReforged.Common.GlobalItems
                 multiplier += unusedSlots * 0.05f;
                 damage += multiplier;
             }
-
-            if (item.prefix == ModContent.PrefixType<Automatic>())
-            {
-                item.autoReuse = true;
-            }
-
+            
             if(item.prefix == ModContent.PrefixType<Martyr>())
             {
                 if (Main.hardMode) damage += 9f;

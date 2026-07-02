@@ -22,9 +22,10 @@ namespace ReforgesReforged.Content.Prefixes.Weapons
             critBonus += 15;
         }
 
+        //note =2 instead of *=2, it weights the manaMult *hard* against it's value.
         public override void ModifyValue(ref float valueMult)
         {
-            valueMult *= 8f;
+            valueMult = 2f;
         }
 
     }

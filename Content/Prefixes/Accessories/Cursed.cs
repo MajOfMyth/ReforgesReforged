@@ -43,7 +43,7 @@ namespace ReforgesReforged.Content.Prefixes.Accessories
             {
                 IsModifier = true,
             };
-            yield return new TooltipLine(Mod, "LifeRegenTooltip", "-2 " + LifeRegenTooltip.Value)
+            yield return new TooltipLine(Mod, "LifeRegenTooltip", "-1 " + LifeRegenTooltip.Value)
             {
                 IsModifier = true,
                 IsModifierBad = true,

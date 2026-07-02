@@ -24,7 +24,7 @@ namespace ReforgesReforged.Content.Prefixes.Weapons
 
         public override void ModifyValue(ref float valueMult)
         {
-            valueMult *= 4f;
+            valueMult *= 0.5f;
         }
 
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)

@@ -1,4 +1,6 @@
-﻿using Terraria;
+﻿using System.Collections.Generic;
+using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace ReforgesReforged.Content.Prefixes.Weapons
@@ -26,6 +28,19 @@ namespace ReforgesReforged.Content.Prefixes.Weapons
         {
             valueMult *= 2f;
         }
+
+        public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
+        {
+
+            yield return new TooltipLine(Mod, "WhipRangeTooltip", "-15% " + WhipRangeTooltip.Value)
+            {
+                IsModifier = true,
+                IsModifierBad = true,
+            };
+
+        }
+
+        public LocalizedText WhipRangeTooltip => Mod.GetLocalization($"WhipRange");
 
     }
 }

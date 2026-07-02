@@ -63,6 +63,12 @@ namespace ReforgesReforged.Common.ModPlayers
                 player.whipRangeMultiplier += 1f;
             }
 
+            //Dueling
+            if(player.HeldItem.prefix == ModContent.PrefixType<Dueling>())
+            {
+                player.whipRangeMultiplier -= 0.15f;
+            }
+
 
             //share the same variable for final values
             int FinalStacks = 0;
